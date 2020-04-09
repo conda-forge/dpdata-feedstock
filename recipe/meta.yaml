@@ -1,5 +1,5 @@
 {% set name = "dpdata" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 07c797bfeababc0f3c4ba549ee5eb983d77f95f2f49cb1ae55a1b9bad36f1197
+  sha256: cc092c9aa6482eb6ec36887341156e75728bf3498ac5154844a54af5968198a9
 
 build:
   number: 0
   noarch: python
-  script: "SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv"
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: LGPL-3.0
   license_family: LGPL
   license_file: LICENSE
-  summary: 'Manipulating DeePMD-kit, VASP and LAMMPS data formats'
+  summary: Manipulating DeePMD-kit, VASP and LAMMPS data formats
   doc_url: https://github.com/deepmodeling/dpdata
   dev_url: https://github.com/deepmodeling/dpdata
 
