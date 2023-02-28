@@ -1,11 +1,11 @@
-About dpdata
-============
+About dpdata-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dpdata-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/deepmodeling/dpdata
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dpdata-feedstock/blob/main/LICENSE.txt)
 
 Summary: Manipulating DeePMD-kit, VASP and LAMMPS data formats
 
