@@ -1,5 +1,5 @@
 {% set name = "dpdata" %}
-{% set version = "0.2.17" %}
+{% set version = "0.2.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 711f17e61ca1853d4a99b5dd13322912f597be8547d09121bae17337929b3eee
+  sha256: 3fb2b5f79d0944f484ae6aaa679c5a8eb42a39721cf3020d222a90eb3c040fce
 
 build:
   number: 0
