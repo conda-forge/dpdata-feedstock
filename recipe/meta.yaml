@@ -10,17 +10,17 @@ source:
   sha256: 542f6e8a9037e1b551700e95fe21041d4ed08c2c405336b8d63f0b63666190ff
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - numpy >=1.14.3
     - monty
     - scipy
@@ -28,6 +28,8 @@ requirements:
     - wcmatch
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dpdata
 
