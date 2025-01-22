@@ -1,5 +1,5 @@
 {% set name = "dpdata" %}
-{% set version = "0.2.21" %}
+{% set version = "0.2.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 542f6e8a9037e1b551700e95fe21041d4ed08c2c405336b8d63f0b63666190ff
+  sha256: 72f2cc4d219ca3f2f838c63bff0212fb65bda4640b87bf33261e606f5a7df9d2
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv
 
