@@ -26,6 +26,8 @@ requirements:
     - scipy
     - h5py
     - wcmatch
+    - lmdb
+    - msgpack-numpy
 
 test:
   requires:
